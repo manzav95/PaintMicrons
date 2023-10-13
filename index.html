@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Microns</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Paint Microns Conversion</h1>
+    </header>
+    <form id="input-field">
+        <label for="length" class="length">Length</label>
+        <input type="number" id="length" name="length" placeholder="Length">
+        <label for="width" class="width">Width</label>
+        <input type="number" id="width" name="width" placeholder="Width">
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+
+    <div id="calc-display">
+        <div id="area-display">
+            <table>
+                <tr>
+                    <th>Length (cm)</th>
+                    <th>Width (cm)</th>
+                </tr>
+                <tr>
+                    <td id="length-static">0</td>
+                    <td id="width-static">0</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table id="microns">
+                <tr>
+                    <th>Grams Needed</th>
+                    <th>Microns</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>105</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>110</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>115</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>120</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
