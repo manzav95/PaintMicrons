@@ -45,3 +45,12 @@ th{
 td{
     text-align: center;
 }
+
+#highMicrons{
+    display: none;
+}
+
+#directions{
+    display: none;
+    text-align: left;
+}

@@ -12,13 +12,22 @@
 <body>
     <header>
         <h1>Paint Microns Conversion</h1>
+        <button id="dirBtn" onclick="directions()">Show Directions</button>
+        <div id="directions">
+            <ol>
+                <li>Input Length and Width of part that will be tested</li>
+                <li>Press 'Calculate' to see the grams/micron conversions</li>
+                <li>If using primer, press 'Click for High Mils' to see higher microns (up to 185)</li>
+                <li>If you need assistance, talk wtih Julian or Cris</li>
+            </ol>
+        </div>
     </header>
     <form id="input-field">
-        <label for="length" class="length">Length</label>
+        <label for="length" class="length">Length (cm)</label>
         <input type="number" id="length" name="length" placeholder="Length">
-        <label for="width" class="width">Width</label>
+        <label for="width" class="width">Width (cm)</label>
         <input type="number" id="width" name="width" placeholder="Width">
-        <button type="button" onclick="calculate()">Calculate</button>
+        <button type="button" onclick="lowCalc()">Calculate</button>
     </form>
 
     <div id="calc-display">
@@ -34,55 +43,145 @@
                 </tr>
             </table>
         </div>
+
+        <button type="button" id="swapBtn" onclick="highCalc()">Click for High Mils</button>
+
         <div>
-            <table id="microns">
+            <table id="lowMicrons">
                 <tr>
-                    <th>Grams Needed</th>
+                    <th>Grams</th>
                     <th>Microns</th>
+                    <th>Mils</th>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>70</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>75</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>80</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>85</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>90</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>95</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>100</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>105</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>110</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>115</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>0</td>
+                    <td></td>
                     <td>120</td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+            <table id="highMicrons">
+                <tr>
+                    <th>Grams</th>
+                    <th>Microns</th>
+                    <th>Mils</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>125</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>130</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>135</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>140</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>145</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>150</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>155</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>160</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>165</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>170</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>175</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>180</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>185</td>
+                    <td></td>
                 </tr>
             </table>
 
