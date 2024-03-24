@@ -89,3 +89,5 @@ function directions() {
     button.innerHTML = "Show Directions";
   }
 }
+
+window.lowCalc = lowCalc;
